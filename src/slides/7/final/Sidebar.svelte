@@ -54,7 +54,14 @@
 
   $: designCount = designs.length;
 
-  setTimeout(() => (designs = [{}, ...designs]), 2000);
+  setTimeout(
+    () =>
+      (designs = [
+        { author: "FOO", designLink: "#", authorLink: "#" },
+        ...designs,
+      ]),
+    2000
+  );
 </script>
 
 <aside class="sidebar" role="complementary">

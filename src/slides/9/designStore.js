@@ -54,7 +54,7 @@ let designArray = [
 
 let designs = readable(designArray, set => {
   set(designArray)
-  const items = [{}, ...designArray]
+  const items = [{ author: "FOO", designLink: "#", authorLink: "#" }, ...designArray]
   const designTimeout = setTimeout(() => set(items), 2000);
 
   return () => { 
